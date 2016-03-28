@@ -10,33 +10,36 @@ title: API接口文档设计
 
 #### 请求地址
 
->
+```
 http://www.xxx.com/api/demo
+```
 
 #### 请求方式
 
->
+```
 GET/POST
+```
 
 #### 请求头信息
 
 一些需要设置请求头的需要加上特殊说明。
 例如:
->
+```
 Content-Type：application/json
+```
 
 #### 请求参数
 
 GET请求方式的列表方式列出请求所需参数，包含说明是否为必传字段。
->
+
 |参数|类型|说明|必传|
 |---|---|---|---|
 |userId|int|用户ID|Y|
 |timestamp|long|时间戳(毫秒值)|N|
 
 POST方式需要传json参数的列出json样例格式
->
-```json
+
+```js
 {
 	"userId":123,	//用户ID，必传
 	"timestamp":3887717000	//时间戳(毫秒值)，非必传
@@ -46,8 +49,8 @@ POST方式需要传json参数的列出json样例格式
 ### 返回
 
 一般接口返回JSON或XML格式的数据，需列出相关返回格式样例数据。
->
-```json
+
+```js
 {
 	"status": 0,
 	"data":{
@@ -58,7 +61,6 @@ POST方式需要传json参数的列出json样例格式
 }
 ```
 
->
 ```xml
 <Result>
 	<status>0</status>
@@ -73,7 +75,6 @@ POST方式需要传json参数的列出json样例格式
 
 必要时需要列出所有返回状态对应的数据格式。
 
->
 |状态值|状态说明|
 |---|---|
 |0|成功|
