@@ -71,3 +71,5 @@ deploy:
   type: git
   repo: https://github.com/yangdage/blog.git
   branch: gh-pages
+
+rss: /atom.xml #rss地址  默认即可

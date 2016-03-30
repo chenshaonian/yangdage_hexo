@@ -1,5 +1,5 @@
 ---
-title: vim下xml文件格式化
+title: Vim下XML文件格式化
 ---
 
 ### 1.打开需要格式化的文件
