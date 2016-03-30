@@ -1,5 +1,6 @@
 ---
 title: Sublime下的Package Control
+categories: 学习
 ---
 
 有时候我们安装的Sublime默认情况下没有安装Package Control(暂且叫它插件管理器)，没有安装它的情况下就不能很方便的安装官方的插件。

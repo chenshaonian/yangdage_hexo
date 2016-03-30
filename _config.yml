@@ -7,14 +7,15 @@ title: "Marks & Notes"
 subtitle:
 description:
 author: yangdage
-language:
+language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://yoursite.com
 root: /blog/
-permalink: :year/:month/:day/:title/
+#permalink: :year/:month/:day/:title/
+permalink: :category/:title.html
 permalink_defaults:
 
 # Directory
@@ -45,7 +46,10 @@ highlight:
 
 # Category & Tag
 default_category: uncategorized
-category_map:
+category_map: 
+  学习: learning
+  备忘: marks
+  其他: others
 tag_map:
 
 # Date / Time format
@@ -62,12 +66,13 @@ pagination_dir: page
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+Plugins: hexo-generator-feed
 ## Themes: https://hexo.io/themes/
 theme: landscape
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-deploy:
+deploy: 
   type: git
   repo: https://github.com/yangdage/blog.git
   branch: gh-pages

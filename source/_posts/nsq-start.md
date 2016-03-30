@@ -1,5 +1,6 @@
 ---
-title: 初识NSQ分布式实时消息架构 
+title: 初识NSQ分布式实时消息架构
+categories: 学习
 ---
 ### 1.NSQ知识普及
 

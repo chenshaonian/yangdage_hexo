@@ -1,5 +1,6 @@
 ---
 title: Windows下端口占用程序查询
+categories: 学习
 ---
 
 ### 1.打开命令行工具
