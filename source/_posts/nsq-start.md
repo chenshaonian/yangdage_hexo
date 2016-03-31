@@ -136,14 +136,15 @@ curl -d 'hello world 3' 'http://127.0.0.1:4151/put?topic=test'
 #### 5.7特别说明
 需要特别注意的是这里的nsq_to_file客户端进程并不确定消息什么时候会发布，所以它会在连接没有断开的情况下定时去nsqlookupd中检索消息，确保消息不丢失。
 
-![这里写图片描述](http://img.blog.csdn.net/20150830214444426)
+![nsq start](https://raw.githubusercontent.com/yangdage/images/master/20150830/20150830214444426.png)
 
-![这里写图片描述](http://img.blog.csdn.net/20150830214529061)
+![nsq start](https://raw.githubusercontent.com/yangdage/images/master/20150830/20150830214529061.png)
 
-![这里写图片描述](http://img.blog.csdn.net/20150830214544464)
+![nsq start](https://raw.githubusercontent.com/yangdage/images/master/20150830/20150830214544464.png)
 
 ### 6.nsqadmin的web统计
-![这里写图片描述](http://img.blog.csdn.net/20150830214340984)
+
+![nsq start](https://raw.githubusercontent.com/yangdage/images/master/20150830/20150830214340984.png)
 
 nsq自身提供了一个便于查看和操作的web界面，可以实时查看统计信息和执行一些管理任务。
 
@@ -167,21 +168,27 @@ iptables -A  INPUT -p tcp --dport 4171 -j ACCEPT
 –j 就是指定是 ACCEPT -接收 或者 DROP 不接收
 
 #### 6.2 Topics界面
-![这里写图片描述](http://img.blog.csdn.net/20150830213809966)
+
+![nsq start](https://raw.githubusercontent.com/yangdage/images/master/20150830/20150830213809966.png)
+
 
 这里详细的列出了所有的发布的topic主题列表，可以点进去查看单个主题的详细统计信息。还可以管理主题，比如清空主题的消息队列，删除主题，暂停主题等等。
 
 #### 6.3 Nodes节点列表
-![这里写图片描述](http://img.blog.csdn.net/20150830213848425)
+
+![nsq start](https://raw.githubusercontent.com/yangdage/images/master/20150830/20150830213848425.png)
 
 这个页面可以查看当前nsqlookupd协调管理的节点列表，以及一些连接信息，比如端口，连接数，主题和主题数量等等。
 
 #### 6.4 Counter消息计数页
-![这里写图片描述](http://img.blog.csdn.net/20150830214013450)
+
+![nsq start](https://raw.githubusercontent.com/yangdage/images/master/20150830/20150830214013450.png)
+
 
 这个页面最简洁，中间一个硕大的计数牌，展示已经处理过的消息数目。
 
 #### 6.5 Lookup界面
-![这里写图片描述](http://img.blog.csdn.net/20150830214233531)
+
+![nsq start](https://raw.githubusercontent.com/yangdage/images/master/20150830/20150830214233531.png)
 
 这里我们可以创建消息主题和消息通道。
